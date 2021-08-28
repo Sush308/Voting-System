@@ -1,0 +1,52 @@
+.body{
+		background-color: lightpink;
+}
+
+
+.head{
+	text-align: center;
+	font-size: 60px;
+}
+
+.sub-head{
+	text-align: center;
+	font-size: 40px;
+}
+
+.container{
+	background: rgba(211, 211, 211, .9);
+	max-width: 300px;
+	float: none;
+	padding: 20px;
+	display: flex;
+	margin-left: 500px;
+}
+
+
+.new-user{
+	text-align: center;
+}
+
+input[type=text],[type="password"],[type="number"]{
+  width: 90%;
+  padding: 10px 8px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.login-button{
+	text-align: center;
+}
+
+.button-login{
+	padding: 6px 50px;
+	color: white;
+	background-color: limegreen;
+}
+
+select{
+	width: 96%;
+  padding: 10px 8px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}

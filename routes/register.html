@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">  
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+		
+</head>
+<body>
+	<h1 class="head">Voting System</h1>
+	<div class="container1">
+			<form action="../api/register.php" method="POST" enctype="multipart/form-data">
+				<h3 class="sub-head">Registration</h3>
+				<div class="half">
+					<input type="text" class="field" name="name" placeholder="Name">
+					<input type="number" class="field" name="mobile" placeholder="Mobile">
+				</div>
+				<div class="half">
+					<input type="password" class="field" name="password" placeholder="Enter password">
+					<input type="password" class="field" name="cpassword" placeholder="Confirm password">
+				</div>
+					<input type="text" class="field1" name="address" placeholder="Your address">
+				<div class="sush">
+					<span> Upload image: </span>
+					<input type="file" name="photo">
+				</div>
+				<div>
+					<span>Select role:</span> 
+					<select name="role">
+						<option value="1">Voter</option>
+						<option value="2">Group</option>
+					</select>
+				</div>
+				<div class="login-button">
+					<button class="button-login">Login</button>
+				</div>
+		
+				<p class="new-user">Already user? <a href="../index.html">Login here</a> </p>
+			</form>
+
+
+
+
+		</div>		
+	</div>
+	
+
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body class="body">
+	<h1 class="head">Voting System</h1>
+	<div class="container">
+	<form action="api/login.php" method="POST">
+		<h3 class="sub-head">Login</h3>
+		<input type="number" name="mobile" placeholder="Mobile">
+		<input type="password" name="password" placeholder="Enter password">
+		<select name="role" class="selection">
+			<option>Choose One</option>
+			<option value="1" class="option">Voter</option>
+			<option value="2" class="option">Group</option>
+		</select>
+		<div class="login-button">
+			<button type="submit" class="button-login">Login</button>
+		</div>
+		<p class="new-user">New user? <a href="routes/register.html"> Register here</a> </p>
+	</form>
+	</div>
+</body>
+</html>
