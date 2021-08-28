@@ -13,8 +13,6 @@
 	else{
 		$status = '<b class="yes-status"> Voted </b>';
 	}
-
- 
 ?>
 
 <!DOCTYPE html>

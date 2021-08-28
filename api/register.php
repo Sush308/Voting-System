@@ -1,7 +1,5 @@
 <?php
 	 include("connect.php");
-	// $connect = mysqli_connect("localhost", "root","","voting") or die("Unable to connect");
-
 
 	$name = $_POST['name'];
 	$mobile = $_POST['mobile'];
@@ -11,11 +9,8 @@
 	$image = $_FILES['photo']['name'];
 	$tmp_name = $_FILES['photo']['tmp_name'];
 	$role = $_POST['role'];
-	// $status = 0;
-	// $votes = 0;
 
 	if ($password == $cpassword) {
-		// move_uploaded_file($tmp_name, "../uploads/".$image);
 		$insert = mysqli_query($connect, "INSERT INTO user (name, mobile, password, address, photo, role, status, votes) VALUES ('$name', '$mobile', '$password', '$address', '../uploads/$image', '$role', 0, 0)");
 		if ($insert && move_uploaded_file($tmp_name, "../uploads/".$image)) {
 			echo '
@@ -39,6 +34,4 @@
 				window.location = "../routes/register.html";
 			</script>';
 	}
-
-
 ?>
